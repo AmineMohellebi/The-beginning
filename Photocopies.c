@@ -7,20 +7,21 @@ int main ()
     float F;
     printf("entrez le nombre de photocopies: ");
     scanf("%d", &P);
-    if (0 < P < 11)
+    if (P < 11)
     {
         F = P * 0.30;
         printf("la facture est: %.2f", F);
     }
-    else if (10 < P < 31)
+    else if (10 < P < 21)
     {
-        F = ((P - 10 )* 0.25) + 3;
+        F = (P * 0.25);
         printf("la facture est: %.2f", F);
     }
     else if (P > 30)
     {
-        F = ((P - 20) * 0.20) + 3 + 2.5;
+        F = (P* 0.20);
         printf("la facture est: %.2f", F);
     }
 return 0;
 }
+
